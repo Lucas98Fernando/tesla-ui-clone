@@ -1,25 +1,32 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+const defaultBackground = (url: string) => css`
+  background-image: url(${url});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
 
 export const Container = styled.div`
   .colored:nth-child(1) {
-    background: #f1ffe7;
+    ${defaultBackground("images/tesla-wallpaper1.jpg")}
   }
   .colored:nth-child(2) {
-    background: #dfffd9;
+    ${defaultBackground("images/tesla-wallpaper2.jpg")}
   }
   .colored:nth-child(3) {
-    background: #cdfeca;
+    ${defaultBackground("images/tesla-wallpaper3.jpg")}
   }
   .colored:nth-child(4) {
-    background: #bbfebb;
+    ${defaultBackground("images/tesla-wallpaper4.jpg")}
   }
   .colored:nth-child(5) {
-    background: #a9fdac;
+    ${defaultBackground("images/tesla-wallpaper5.jpg")}
   }
   .colored:nth-child(6) {
-    background: #90f29c;
+    ${defaultBackground("images/tesla-wallpaper6.jpg")}
   }
   .colored:nth-child(7) {
-    background: #77e68c;
+    ${defaultBackground("images/tesla-wallpaper7.jpg")}
   }
 `;
