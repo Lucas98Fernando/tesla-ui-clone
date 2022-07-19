@@ -30,3 +30,7 @@ export const Container = styled.div`
     ${defaultBackground("images/tesla-wallpaper7.jpg")}
   }
 `;
+
+export const Spacer = styled.div`
+  height: 15vh;
+`;
